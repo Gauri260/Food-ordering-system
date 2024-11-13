@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger King - Virtual Ordering System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="images/bk-logo.png" alt="Burger King" class="logo">
+        <h1>Virtual Ordering System</h1>
+        <p>Get your favorite meals at the click of a button!</p>
+    </div>
+    
+    <div class="container">
+        <h2>Select your items:</h2>
+        <form id="food-form">
+            <div class="food-item">
+                <input type="checkbox" id="burger" name="food" value="burger">
+                <label for="burger"><img src="images/burger.jpg" alt="Burger"> Burger</label>
+            </div>
+            <div class="food-item">
+                <input type="checkbox" id="fries" name="food" value="fries">
+                <label for="fries"><img src="images/fries.jpg" alt="Fries"> Fries</label>
+            </div>
+            <div class="food-item">
+                <input type="checkbox" id="drink" name="food" value="drink">
+                <label for="drink"><img src="images/drink.jpg" alt="Drink"> Drink</label>
+            </div>
+            <div class="food-item">
+                <input type="checkbox" id="nuggets" name="food" value="nuggets">
+                <label for="nuggets"><img src="images/nuggets.jpg" alt="Nuggets"> Nuggets</label>
+            </div>
+            <button type="button" id="order-button">Order Food</button>
+        </form>
+    </div>
+
+    <div id="order-info">
+        <div class="loading" id="loading-spinner"></div>
+        <p id="order-id"></p>
+        <div id="food-image"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
